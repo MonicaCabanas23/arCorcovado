@@ -8537,8 +8537,8 @@ header #logo {
   color: #fff;
 }
 #site-slogan {
-  background-color: #161514;
-  background-color: rgba(22, 21, 20, 0.75);
+  background-color: #234a80;
+  /* background-color: rgba(22, 21, 20, 0.75); */
   height: 24px;
   color: #fff;
   overflow: hidden;

@@ -8515,7 +8515,7 @@ h1 .count {
   width: 100%;
 }
 #top-bar {
-  background-color: #234a80;
+  background-color: red;
 }
 #top-bar:after {
   content: '';

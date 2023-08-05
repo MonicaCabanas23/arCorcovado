@@ -223,8 +223,8 @@ body {
     sans-serif;
   font-size: 13px;
   line-height: 20px;
-  color: #000;
-  background-color: #f8f8f8;
+  color: #333;
+  background-color: #fff;
 }
 a {
   color: #08c;
@@ -8684,7 +8684,7 @@ nav > div {
   background-color: #404040;
 }
 #user-menu > button {
-  background-color: #ecb70b !important;
+  background-color: #ECB70B !important;
   margin-left: 12px;
 }
 #user-menu form {

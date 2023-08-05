@@ -223,7 +223,7 @@ body {
     sans-serif;
   font-size: 13px;
   line-height: 20px;
-  color: #333;
+  color: #000;
   background-color: #f8f8f8;
 }
 a {
@@ -8515,7 +8515,7 @@ h1 .count {
   width: 100%;
 }
 #top-bar {
-  background-color: red;
+  background-color: #234a80;
 }
 #top-bar:after {
   content: '';
@@ -8684,6 +8684,7 @@ nav > div {
   background-color: #404040;
 }
 #user-menu > button {
+  background-color: #ecb70b !important;
   margin-left: 12px;
 }
 #user-menu form {

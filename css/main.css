@@ -7978,6 +7978,11 @@ h6 {
   margin-top: 10px;
   padding-top: 2px;
 }
+#sidebar > section {
+  border: 1px solid #949bad;
+  border-radius: 15px;
+  padding: 5px;
+}
 h1 .count {
   margin-left: 8px;
   text-shadow: none;
@@ -8537,7 +8542,7 @@ header #logo {
   color: #fff;
 }
 #site-slogan {
-  background-color: #234a80;
+  background-color: #234a80 !important;
   /* background-color: rgba(22, 21, 20, 0.75); */
   height: 24px;
   color: #fff;
@@ -8685,6 +8690,7 @@ nav > div {
 }
 #user-menu > button {
   background-color: #ecb70b !important;
+  color: #fff;
   margin-left: 12px;
 }
 #user-menu form {

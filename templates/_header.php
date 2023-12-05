@@ -16,17 +16,13 @@
 
     <div id="header-brand">
       <a id="header-logo" href="/">
-      <?php 
-      echo image_tag('/plugins/arDemoThemePlugin/images/logo.png', ['width' => '20', 'height' => '20', 'alt' => __('UCA logo')]); 
-      echo "<p>Universidad Centromaericana José Simeón Cañas</p>";
-      ?>
-      </a>
-      <div id="header-text">
         <?php 
-        echo "<hr>";
-        echo "<p>Archivo Histórico del Conflicto Armado Salvadoreño (Ahcas)</p>";
+        echo image_tag('/plugins/arDemoThemePlugin/images/logo.png', ['width' => '20', 'height' => '20', 'alt' => __('UCA logo')]); 
+        echo "<p class='wrap'>Universidad Centromaericana José Simeón Cañas</p>";
         ?>
-      </div>
+      </a>
+      <?php echo "<hr id='vertical-hr'>"; ?>
+      <?php echo "<p class='wrap'>Archivo Histórico del Conflicto Armado Salvadoreño (Ahcas)</p>"; ?>
 
 </div>
 

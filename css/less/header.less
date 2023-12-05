@@ -37,16 +37,59 @@
 }
 
 #header div.container div#header-brand {
-  width: 100%;
-  height: 100%;
+  width: 670px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
 
-  a#header-logo img {
-    width: 66px;
-    height: 90px;
-    margin-right: 10px;
-    padding-right: 10px;
-    vertical-align: bottom;
+  max-width: 30rem; 
+  min-width: 30rem;
+
+  a#header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+    overflow-wrap: break-word;
+    max-width: 15rem;
+    min-width: 15rem;
+    gap: 10px;
+
+    img {
+      width: 65.794px;
+      height: 80px; 
+    }
+    
+    p.wrap {
+      color: #FFF;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    } 
   }
+
+  hr#vertical-hr {
+    background: #ECB70B;
+    width: 3px;
+    height: 50px;
+    margin: 0 0 10px;
+  }
+
+  p.wrap {
+    color: #FFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
 } 
 
 #header-nav {

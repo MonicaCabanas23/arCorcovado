@@ -10,11 +10,8 @@
   </div>
 <?php } ?>
 
-<div id="header">
-
-  <div class="container">
-
-    <div id="header-brand">
+<header>
+  <div id="header-brand">
       <a id="header-logo" href="/">
         <?php echo image_tag('/plugins/arDemoThemePlugin/images/logo.png', ['width' => '20', 'height' => '20', 'alt' => __('UCA logo')]); ?>
       <div class="header-brand-text">
@@ -85,7 +82,4 @@
     <?php echo get_component('menu', 'userMenu'); ?>
     <?php echo get_component('menu', 'mainMenu', ['sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID()]); ?>
   </nav>
-
-  </div>
-
-</div>
+</header>

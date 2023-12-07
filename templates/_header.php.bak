@@ -74,62 +74,31 @@
 
     </form>
 
-    <div id="browse-menu">
-
-  <button class="top-item top-dropdown" data-toggle="dropdown" data-toggle="dropdown" target="#" aria-expanded="false"><?php echo image_tag('/plugins/arDemoThemePlugin/images/arrow.svg'); ?></button>
-
-  <div class="top-dropdown-container top-dropdown-container-right">
-
-    <div class="top-dropdown-arrow">
-      <div class="arrow"></div>
-    </div>
-
-    <div class="top-dropdown-body">
-      <ul>
-        <li id="node_browseInformationObjects" class="leaf">
-          <a href="/index.php/informationobject/browse" title="Archival Descriptions">
-            <?php echo image_tag('/plugins/arDemoThemePlugin/images/menu.svg'); ?>
-            Descripción archivística
-          </a>
-        </li>
-        <li id="node_browseActors" class="leaf">
-          <a href="/index.php/actor/browse" title="Authority Records">
-            <?php echo image_tag('/plugins/arDemoThemePlugin/images/person.svg'); ?>
-            Registros de autoridad
-          </a>
-        </li>
-        <li id="node_browseRepositories" class="leaf">
-          <a href="/index.php/repository/browse" title="Archival Institutions">
-            <?php echo image_tag('/plugins/arDemoThemePlugin/images/domain.svg'); ?>
-            Instituciones
-          </a>
-        </li>
-        <li id="node_browseSubjects" class="leaf">
-          <a href="/index.php/taxonomy/index/id/35" title="Subjects">
-            <?php echo image_tag('/plugins/arDemoThemePlugin/images/subject.svg'); ?>
-            Materias
-         </a>
-        </li>
-        <li id="node_browsePlaces" class="leaf">
-          <a href="/index.php/taxonomy/index/id/42" title="Places">
-            <?php echo image_tag('/plugins/arDemoThemePlugin/images/location.svg'); ?>
-            Lugares
-          </a>
-        </li>
-        <li id="node_browseDigitalObjects" class="leaf">
-          <a href="/index.php/informationobject/browse?view=card&onlyMedia=1&topLod=0" title="Digital Objects">
-            <?php echo image_tag('/plugins/arDemoThemePlugin/images/computer.svg'); ?>
-            Objetos digitales
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="top-dropdown-bottom"></div>
-
   </div>
 
-</div>
+  <div id="browse-menu">
+
+    <button class="top-item top-dropdown" data-toggle="dropdown" data-target="#" aria-expanded="false"><?php echo $browse; ?> </button>
+
+    <div class="top-dropdown-container top-dropdown-container-right">
+
+      <div class="top-dropdown-arrow">
+        <div class="arrow"></div>
+      </div>
+
+      <div class="top-dropdown-header">
+        <h2><?php echo $browseMenu->getLabel(['cultureFallback' => true]); ?></h2>
+      </div>
+
+      <div class="top-dropdown-body">
+        <ul>
+          <?php echo QubitMenu::displayHierarchyAsList($browseMenu, 0); ?>
+        </ul>
+      </div>
+
+      <div class="top-dropdown-bottom"></div>
+
+    </div>
 
   </div>
 
